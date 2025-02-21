@@ -1,0 +1,37 @@
+      |                   |                  |                     |
+|.="";=.||______
+| | ,-",="" "=.|                  | |___________________|__"=._o"-. "=.______________|___________________ |                "=.o"=._      _"=. |
+|:=.o "=..".-="'"=.|
+| | .--" , ; "=._o." ,-"""-._ ".   | |___________________|_._"  ,. . `` , "-."-. ". '|___________________
+| |o"=._ , " ; .". , "-."-.; ; |
+|| ;-.o"=._; ."  '."\ . "-._ /_______________|_______ |                   | |o ;   "-.o"=._``  ' " ,.--o; |
+||| ; (#) -.o "=._.--"_o.-; ;___|___________________ ____/______/______/___|o;._    "      ".o|o.--" ;o;///___
+////"=.o--. ; | ; ; ;////
+////"=.o--. ;o|o; .;o;///
+/////"=.o.; | ;.--"o.--"////
+/////"=.o|o_.--""////_
+///////////_____ /
+
+''')
+#if you can't tell, the ASCII here is supposed to be a pretty treasure chest lol
+##you can find more ASCII art here: https://www.asciiart.eu/
+
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+
+leftright = (input("You're at a cross road. Where do you want to go?\n Type "left" or "right" "))
+
+if leftright == "left":
+waitswim = (input("You've come to a lake. There is an island in the middle of the lake\n Type "wait" to wait for a boat. Type "swim" to swim across. "))
+if waitswim == "wait":
+color = (input("Which door? red, yellow, blue?"))
+if color == "red":
+print("Game Over. red")
+elif color == "blue":
+print("Game Over. blue")
+else:
+print("You found the treasure!")
+else:
+print("Game Over. swim")
+else:
+print("Game Over. right")
